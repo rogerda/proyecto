@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ .usuario{
+     display: flex;
+     flex-direction: row;
+     margin-left: 20px;
+     justify-content: center;
+     width: 100%;
+ 
+ }
+ .usuario, .usuario__2{
+    width: 50%;
+}
+ .usuario__2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 150px;
+  
+ }
+ 
+ .usuario__div{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    
+ }
+ .usuario__form{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-top: 60px;
+     margin-bottom: 50px;
+     margin-left: 400px; 
+     width: 500px;
+ }
+ .card__contine{
+    width: 300px;
+    margin-top: 40px;
+}
+.botones__abajo{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: flex-end;
+  
+}
+.boton{
+    width: 50px;
+    border: none;
+    width: 100px;
+    font-family: 'Encode Sans', sans-serif;
+    size: 18px;
+    font-weight: 600;
+   
+    
+}
+.boton img{
+    width: 60px;
+    box-shadow: 0 2px 5px rgba(15, 15, 15, 0.4);
+    border-radius: 10px;
+  }
+  /*animacion de iconos de formularios*/
+  .botones__abajo img {
+    transition: all 0.5s;
+    
+}
+.botones__abajo img:hover{
+    transform: scale(1.2);
+    z-index: 0;
+   
+   
+}
+.pie__dr img {
+  transition: all 1s;
+  z-index: 0;
+}
+
+/*media querie pantalla más chicas 1080*/
+@media (max-width: 1080px) {
+    .usuario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    
+    }
+    .usuario, .usuario__2{
+       width: 50%;
+   }
+    .usuario__2{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+     
+       margin-top: 0px;
+       margin-bottom: 20px;
+       margin-left: 250px;
+        }
+    
+    .usuario__div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+      
+       
+    }
+    .usuario__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        margin-left: 200px;
+        width: 300px;
+    }
+    .card__contine{
+       width: 300px;
+       
+   }
+   .botones__abajo{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  
+}
+.boton{
+    width: 50px;
+    border: none;
+    width: 100px;
+    font-family: 'Encode Sans', sans-serif;
+    size: 18px;
+    font-weight: 600;
+   
+    
+}
+.boton img{
+    width: 60px;
+    
+  }
+   @media (max-width: 390px) {
+    .usuario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    
+    }
+    .usuario, .usuario__2{
+       width: 50%;
+   }
+    .usuario__2{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       margin-top: 0px;
+       margin-bottom: 20px;
+       margin-left: 330px;
+    }
+    
+    .usuario__div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        
+       
+    }
+    .usuario__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        margin-left: 370px;
+        width: 290px;
+    }
+    .card__contine{
+       width: 300px;
+    }
+    .botones__abajo{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      
+    }
+    .boton{
+        width: 50px;
+        border: none;
+        width: 100px;
+        font-family: 'Encode Sans', sans-serif;
+        size: 18px;
+        font-weight: 600;
+       
+        
+    }
+    .boton img{
+        width: 60px;
+      }
+}
+}

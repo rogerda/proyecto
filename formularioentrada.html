@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuario</title>
+     <!-- hoja de estilo armado y animaciones (estructura) -->
+    <link rel="stylesheet" href="./css/estilos.css">  
+     <!-- hoja de estilo poncho a respetar -->
+    <link rel="stylesheet" href="./css/poncho.css">  
+    <!-- fuente y tipográfia según poncho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- sección cabecera estilo .header -->
+    <header class="header"> 
+        <div class="header__iz"><a title="SSN" alt="Logo SSN" href="https://www.ssn.gob.ar"><img class="images__logo" src="images/ssn-pie.png" alt="www.ssn.gob.ar" /></a></div>
+        <div class="header__dr"> <img alt="Logo Gestión de Usuario" title="Gestión de Usuario" class="images__gu" src="images/login.png" alt="SSN-HOME" /> <h3 class="tit__gral">Gestión de Usuario</h3></div>
+        </header>
+    <section class="costado">
+            <!-- sección central estilo .costado -->
+            <!-- sección derecha estilo .iz -->
+        <div class="iz">
+            <form class="form__iz" action="" method="" enctype="">
+                <h5 class="medio_titulo"> <img class="ima__tit" alt="Logo Usuario" src="./images/user-plus.png">Nuevo Usuario</h5>
+                <label class="label" for="usuario">Aplicación:</label>
+                <select name="ctl00$MainContent$ddlApp" id="MainContent_ddlApp" class="form-control">          
+                    <option value="value1"selected >Seleccione...</option>
+                    <option value="value2" >Value 2</option>
+                    <option value="value3">Value 3</option> 
+                </select>
+                <label class="label" for="usuario">Entidad:</label>
+                <select name="ctl00$MainContent$ddlEntidad" id="MainContent_ddlEntidad" Disabled="disabled" class="form-control">
+                    <option value="value1"selected >Seleccione...</option>
+                    <option value="value2" >Value 2</option>
+                    <option value="value3">Value 3</option>
+                </select>                         
+                <label class="label" for="usuario">Nombre:</label>
+                <input class="form-control" required type="text" id="MainContent_txtNombre"
+                name="ctl00$MainContent$txtNombre" placeholder="Ingrese su Nombre">
+                <label class="label" for="Apellido">Apellido:</label>
+                <input class="form-control" required type="text" id="MainContent_txtApellido"
+                name="ctl00$MainContent$txtApellido" placeholder="Ingrese su Apellido">
+                <label class="label" for="Usuario">Usuario:</label>
+                <input class="form-control" required type="text" id="MainContent_txtUsua"
+                name="ctl00$MainContent$txtUsua" placeholder="Ingrese su Usuario">
+                <label class="label" for="cuil">Contraseña:</label>
+                <input class="form-control" required type="password" id="MainContent_txtUsua"
+                name="ctl00$MainContent$txtUsua" placeholder="Ingrese su Contraseña">
+                <label class="label" for="Verificación">Verificación:</label>
+                <input class="form-control" required type="text" id="MainContent_txtVerif"
+                name="ctl00$MainContent$txtVerif" placeholder="Ingrese su Verificación">
+                <label class="label" for="Cuil">Cuil:</label>
+                <input class="form-control" required type="text" id="MainContent_txtVerif"
+                name="ctl00$MainContent$txtVerif" placeholder="Ingrese su Cuil">
+                <label class="label" for="entidad">Email:</label>
+                <input class="form-control" required type="text" id="ctl00$MainContent$txtMail"
+                name="ctl00$MainContent$txtMail" placeholder="Ingrese su Correo Electrónico">
+                <label class="label" for="cuil">Tel:</label>
+                <input class="form-control" required type="text" id="MainContent_txtTel"
+                name="ctl00$MainContent$txtTel" placeholder="Ingrese su Teléfono">
+                <div class="div__boton">
+                <div class="div__boton__iz"><button alt="Crear" type="button" class="btn btn-primary" name="ctl00$MainContent$btnEnviar" id="MainContent_btnEnviar">Crear</button></div>
+                <div class="div__boton__dr"><button alt="Borrar" type="reset" class="btn btn-link" name="ctl00$MainContent$btnBorrar" id="MainContent_btnBorrar">Borrar</button></div>
+                <a href="./video/ayuda.mp4" target="_blank"><button alt="Borrar" type="button" class="btn btn-primary" name="" id="" ><i><img></i>Ayuda</button></a>
+                </div>
+                </form>
+        </div>
+        <!-- sección derecha estilo .dr -->
+            <div class="dr">
+            <form class="form__iz" action="" method="" enctype="">
+                <h5 class="medio_titulo"> <img class="ima__titdr" src="./images/user.png">Usuario Registrado</h5>
+                <label class="label" for="usuario">Aplicación:</label>
+                <select name="ctl00$MainContent$ddlAppEnc" class="form-control" id="MainContent_ddlAppEnc">
+                    <option value="value1"selected >Seleccione</option>
+                    <option value="value2" >Borrar 1</option>
+                    <option value="value3">Borrar </option>
+                  </select>
+                <label class="label" for="usuario">Usuario:</label>
+                <input class="form-control" required type="text" id="MainContent_Text1"
+                name="ctl00$MainContent$Text1" placeholder="Ingrese su Usuario">
+                <label class="label" for="entidad">Entidad:</label>
+                <input class="form-control" required type="text" id="MainContent_Text1"
+                name="ctl00$MainContent$txtEntCod" placeholder="Ingrese su Entidad">
+                <label class="label" for="cuil">Cuil:</label>
+                <input class="form-control" required type="text" id="MainContent_Text2"
+                name="ctl00$MainContent$Text2" placeholder="Ingrese su Cuil">
+                <label class="label" for="cuil">Contraseña:</label>
+                <input class="form-control" required type="password" id="MainContent_txtPassword"
+                name="ctl00$MainContent$txtPassword" placeholder="Ingrese su Contraseña">
+                <div class="div__boton">
+                <div class="div__boton__iz"><button alt="Ingresar" type="button" class="btn btn-primary" name="ctl00$MainContent$btnSolicitar" id="MainContent_btnSolicitar">Ingresar </button></div>
+                <div class="div__boton__dr"><button alt="Borrar" type="reset" class="btn btn-link">Borrar</button></div>
+                </div>
+                <!-- 4 botones abaja de sección dr  -->
+                <div class="div__boton">
+                    <a href="http://xxxxxxx" target="_blank"><button alt="Ingresar" type="button" class="btn btn-primary btn-sm" id="MainContent_lnkCambioPass" >Recuperar Contraseña </button></a>
+                </div>
+                <div class="div__boton">
+                    <a href="http://xxxxxxx" target="_blank"><button alt="Borrar" type="button" class="btn btn-primary btn-sm" id="MainContent_lnkEditoUsuario">Modificar Datos de Usuario</button></a>
+                    </div>
+                <div class="div__boton">
+                    <a href="http://xxxxxxx" target="_blank"><button alt="Borrar" type="button" class="btn btn-primary btn-sm" id="MainContent_lnkReimprimirPDF" ><i><img src="./images/acrobat.png" style="vertical-align: middle;" width="15px" height="18px"></i>Reimprimir PDF</button></a>
+                </div>
+                <div class="div__boton">
+                    <a href="http://seguro2.ssn.gob.ar/loginuniversal/login.aspx" target="_blank"><button alt="Borrar" type="button" class="btn btn-primary btn-sm" name="ctl00$MainContent$ImageButton1" id="MainContent_ImageButton1" ><i><img src="./images/autentificacion.png" style="vertical-align: middle;" width="20px" height="20px"></i>Ingreso Referentes</button></a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- pie gral estilo .pie -->
+    <footer class="pie">
+        <!-- pie gral estilo .pie__iz -->
+        <div class="pie__iz">
+            <a href="https://twitter.com/ssn_ar?lang=es" class="images__pie" alt="SSN twitter"> <img title="twitter SSN" class="images__pie" src="images/twitter-pajaro.png"></a>
+            <a href="https://www.instagram.com/ssn_arg/" class="images__pie" alt="SSN instagram"> <img title="instragram SSN" class="images__pie" src="images/instagram.png"></a>
+            <a href="https://www.youtube.com/channel/UCZFKGDOvcGv8JebcpUSmFFA" class="images__pie" alt="youtube SSN"> <img title="youtube SSN" class="images__pie" src="images/youtube.png"></a>
+            <a href="https://www.linkedin.com/company/superintendencia-de-seguros-de-la-naci%C3%B3n/" class="images__pie" alt="SSN linkedin"> <img title="linkedin SSN" class="images__pie" src="images/linkedin-in.png" ></a>
+        </div> 
+          <!-- pie gral estilo .pie__dr -->
+        <div class="pie__dr">
+            <a href="http://www.argentina.gob.ar"><img title="Argentina.gob.ar" src="images/argentinagob-2.png" width="200"></a>
+        </div>
+    </footer>
+</body>
+</html>

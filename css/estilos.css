@@ -1,0 +1,510 @@
+/*fuente*/
+
+/* css reset*/
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+body {
+/*estilos tipografias por las dudas que haya que cambiar*/
+font-family: 'Roboto', sans-serif;
+}
+ul {
+    list-style: none;
+
+}
+/*cabecera header*/
+.header{
+height: 80px;
+width: 100%;
+padding: 1rem;
+/*box shadows*/
+box-shadow: 0 2px 5px rgba(15, 15, 15, 0.4);
+background-color: #37bbed;
+display: flex;
+/*de costado el menu*/
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+z-index: 1500px;
+position: fixed;
+color: #fff;
+}
+ /*se divide header*/
+.header__dr,.header__iz{
+width: 50%;
+
+}
+ /*header iz*/
+.header__iz{
+display: flex;
+flex-direction: row;
+justify-content: left;
+align-items: center;
+
+
+
+}
+ /*header derecha*/
+.header__dr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+ /*images para header*/
+.images__logo {
+    width: 70%;
+    height: 70%;
+    margin-left: 50px;
+
+
+}
+/* .nav{
+    width: 100%;
+} */
+
+/*
+
+.nav__enlace{
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+font-size: 12px;
+}*/
+
+ /*login registro*/
+.login {
+/* min-height: 10vh; */
+/* background-color: #2b3268; */
+align-items: center;
+display: flex;
+/* max-width: 2000px; */
+margin: 0 auto;
+/*justify-content:center;*/
+background-image: url(../images/isosolo.png);
+background-repeat: no-repeat;
+background-position-x: center;
+height: 100%;
+margin-left: 130px;
+
+}
+ /*formulario central*/
+.formcentral {
+    /* min-height: 150vh; */
+/* background-color: #2b3268; */
+align-items: center;
+background-color: #2b3268;
+display: flex;
+/* max-width: 2000px; */
+margin: 0 auto;
+justify-content: center;
+background-image: url(../images/isosolo.png);
+background-repeat: no-repeat;
+background-position-x: center;
+height: 100%;
+}
+
+ /*va para la izquierda*/
+.login__iz{
+display: flex;
+/* background-color:aqua; */
+font-size: medium;
+/* margin-left: 80px; */
+/* margin-top: 50px; */
+flex-direction: column;
+font-family: 'Roboto', sans-serif;
+color: #fff;
+width: 49%;
+margin: 0;
+
+}
+ /*se divide pantalla*/
+.login__dr, .login__iz {
+    width: 50%;
+    margin-top: 80px;
+
+   }
+    /*pantalla derecha*/
+.login__dr{
+display: flex;
+flex-direction: column;
+width: 49%;
+}
+ /*pie*/
+.pie{
+    display: flex;
+    background-color: #37bbed;
+    color: #fff;
+    font-size: small;
+    position: fixed;
+    width: 100%;
+    bottom:0px;
+    align-items: center;
+    border: 0em;
+
+
+}
+ /*divide pie*/
+.pie__dr,.pie__iz{
+    width: 50%;
+} /*pie a la derecha*/
+.pie__dr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ /*pie a la izquierda*/
+.pie__iz{
+    display: flex;
+}
+
+ /*clase titulo*/
+.login__tit{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(32, 193, 233);
+
+}
+
+ /*por si se necesita*/
+.rotativo__images{
+    display: flex;
+    gap: 10rem;
+    /* justify-content:end; */
+    margin-top: 1rem;
+    /* border-radius: 200px; */
+    justify-content: center;
+
+}
+.rotativo__images__indi {
+width: 50px;
+height: 50px;
+box-shadow: 0 10px 50px rgb(255, 253, 253);
+border-style:dotted;
+border-color: #fff;
+
+
+}
+.input{
+    width: 100%;
+    /* padding: 12px 20px; */
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.texto{
+    width: 70%;
+    text-align: justify;
+    padding-top: 1rem;
+}
+
+.form__iz{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 1px;
+   justify-content: flex-start;
+}
+.form__dr{
+    width: 400px;
+}
+/*************************en funcionamiento******************************/
+/*************************en funcionamiento******************************/
+/*gral pantalla división*/
+.costado{
+    display: flex;
+    height: 100%;
+
+}
+/*pantalla derecha*/
+       .dr{
+           background-color: #abe0f3;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           margin-top: 50px;
+           background-image: url(../images/logito_fondo.png);
+           background-repeat: no-repeat;
+           background-size: 90%;
+           background-position: center;
+           background-position: top;
+           height: 100%;
+
+
+        }
+        /*pantalla izquierda*/
+        .iz{
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        /*se divide en 2*/
+        .dr,.iz {
+            width: 50%;
+
+        }
+        /*images tit*/
+        .images__gu{
+            width: 70px;
+            height: 70px;
+
+        }
+        /*iamges pie*/
+        .images__pie{
+            width: 20px;
+            height: 20px;
+            gap: 1rem;
+            margin-left: 2rem;
+        }
+         .medio_titulo {
+            align-items: center;
+            vertical-align: bottom;
+            color: #000;
+
+
+        }
+        .div__boton{
+            display: flex;
+            justify-content: center;
+            margin-top: 0.5rem;
+            gap: 2rem;
+        }
+        .div__boton__iz{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .div__boton__dr{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .div__boton__iz, .div__boton__dr{
+            width: 50%;
+        }
+      .ima__tit{
+          width: 25px;
+          height: 20px;
+          margin-right: 0.5rem;
+          align-items: center;
+          vertical-align: bottom;
+          box-shadow: 0px 0px 0px 0px rgba(15, 15, 15, 0.8);
+      }
+      .ima__titdr{
+        width: 18px;
+        height: 20px;
+        margin-right: 0.5rem;
+        align-items: center;
+        vertical-align: bottom;
+        box-shadow: 0px 0px 0px 0px rgba(15, 15, 15, 0.8);
+    }
+     
+    /****************************animaciones en generales*************************/
+    /*********************animaciones en cabecera*****************/
+    .header__iz img{
+        transition: all 1s;
+        z-index: 0;
+    }
+    .header__iz:hover img{
+        transform: scale(1.1);
+        z-index: 0;
+        /* transform: translateX(30px); */
+    }
+    .header__dr img{
+        transition: all 1s;
+    }
+    .header__dr:hover img{
+        transform: scale(1.2);
+        transform: translateX(10px);
+        z-index: 0;
+    }
+    /************fondo dr imagen de  login*******************/
+    /* .dr img{
+        transition: all 1s;
+        z-index: 0;
+    }
+    .dr:hover img{
+        transform: scale(1.2);
+        z-index: 0;
+    }
+    .iz img{
+        transition: all 1s;
+        z-index: 0;
+    }
+    .iz:hover img{
+        transform: scale(1.2);
+        z-index: 0;
+    }  */
+      /*******************animaciones de pie***********************/
+      .pie__iz img {
+          transition: all 1s;
+          
+      }
+      .pie__iz img:hover{
+          transform: scale(1.2);
+          z-index: 0;
+         
+         
+    }
+    .pie__dr img {
+        transition: all 1s;
+        z-index: 0;
+    }
+     
+    .pie__dr img:hover{
+        transform: scale(1.1);
+        z-index: 0;
+  }
+    /* meadiaqueries acomodar para pantalla chicas Roger*/
+      @media (max-width: 830px) {
+        .costado{
+            display: flex;
+            flex-direction: column;
+            height: 180%;
+           }
+        /*derecha registro*/
+        .dr{
+            background-color: #abe0f3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(../images/logito_fondo.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            background-position: top;
+            height: 150vh;
+            justify-content: center;
+            margin-left: 0rem;
+            vertical-align: 0px;
+            align-items: center;
+            width: 100%;
+     
+         }
+          /*izquierda registro*/
+         .iz{
+             background-color: #fff;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             margin-top: 90px;
+             margin-left: 13rem;
+             justify-content: center;
+         }
+          /*se divide la pantalla*/
+         .dr,.iz {
+             /* width: 50%; */
+             justify-content: center;
+
+         }
+         .form__iz {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            gap: 1px;
+            height: 100%;
+            
+         }
+         /*mas chicas pantallas mas pequeñas*/
+         @media (max-width: 400px) {
+            .costado{
+                display: flex;
+                flex-direction: column;
+                 height: 100%; 
+                justify-items: center;
+                justify-content: center;
+              
+
+
+            }
+            .dr{
+                background-color: #abe0f3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-image: url(../images/logito_fondo.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+                background-position: top;
+                height: 100%;
+                justify-content: center;
+                vertical-align: 0px;
+                align-items: center;
+                width: 100%;
+                margin: 0px;
+
+
+
+             }
+             .iz{
+                 background-color: #fff;
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 margin-top: 110vh;
+                 margin-left: 6rem;
+                 justify-content: center;
+             }
+             .dr,.iz {
+                 /* width: 50%; */
+                 justify-content: center;
+
+             }
+             .form__iz {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                gap: 1px;
+                height: 110vh;
+                justify-content: center;
+             }
+           
+            
+            .pie{
+                display: flex;
+                flex-direction: column;
+                background-color: #37bbed;
+                
+                }
+
+            .pie__dr{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .pie__iz{
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+            }
+            .images__pie{
+                width: 20px;
+                height: 20px;
+                gap: 0.5rem;
+                margin-left: 1rem;
+            }
+            
+            .tit__gral {
+                font-size: 16px;
+            }
+            .images__logo{
+                width: 110%;
+                height: 110%;
+                margin-left: 5px;
+            }
+            .images__gu{
+                width: 50px;
+                height: 50px;
+        }
+       
+            
+    }
+    
+}
